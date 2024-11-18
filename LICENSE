@@ -1,0 +1,16 @@
+Included under the MIT license:
+ - lapis v1.16.0, (c) 2023 Leaf Corcoran (https://github.com/leafo/lapis/blob/master/LICENSE)
+ - ansicolors, (c) 2009 Rob Hoelz, and (c) 2011 Enrique García Cota (https://github.com/kikito/ansicolors.lua/blob/master/COPYING)
+ - argparse, (c) 2013-2018 Peter Melnichenko, and (c) 2019 Paul Ouellette (https://github.com/luarocks/argparse/blob/master/LICENSE)
+ - date, (c) 2013-2021 Thijs Schreijer (https://github.com/Tieske/date/blob/master/LICENSE)
+ - etlua, (c) ~2013 Leaf Corcoran (no license file, but declared MIT in rockspec: https://github.com/leafo/etlua/blob/master/etlua-dev-1.rockspec#L16)
+ - loadkit, (c) 2023 Leaf Corcoran (https://github.com/leafo/loadkit/blob/master/LICENSE)
+ - The `re` module of LuLPeg, taken from lpeg, (c) 2013 Lua.org, PUC-Rio (https://www.inf.puc-rio.br/~roberto/lpeg/#license)
+
+LuLPeg itself (excepting the parts under MIT above) is (c) 2013 Pierre-Yves Gérardy, and is licensed under the "Romantic WTF Public License" (https://github.com/pygy/LuLPeg/blob/master/LICENSE).
+
+The shims in `.lua` are provided under the CC0 public domain dedication (https://creativecommons.org/publicdomain/zero/1.0/). They're mostly just presenting the bare minimum of the module interface lapis uses, reimplemented using redbean functions.
+
+redbean itself uses "software licensed ISC, MIT, BSD-2, BSD-3, zlib", and a copy of its licensing can be found within the redbean binary. I'm not entirely sure how on Earth that works, but whatever.
+
+- minerobber

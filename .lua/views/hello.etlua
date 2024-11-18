@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lapisbean!</title>
+</head>
+<body>
+<h1>Hello from redbean <%=redbean_version%>!</h1>
+<p>This is a lapis app running natively on redbean using some compatibility layers I wrote.</p>
+<p>More specifically:</p>
+<ul>
+<li>lapis, ansicolors, argparse, date, etlua, and loadkit are all pure-Lua, so I just copied the latest releases of each.</li>
+<li>lpeg isn't pure Lua, but LuLPeg (a pure-Lua shim) exists, albeit emulating an ancient version of lpeg (which is sufficient for lapis' purposes)</li>
+<li>lua-cjson is emulated using redbean's native JSON capabilities</li>
+<li>luaossl's rand function is replaced with GetRandomBytes (not as secure, but there's no CSPRNG in redbean), and the HMAC functions are replaced with redbean's native GetCryptoHash() function</li>
+<li>The luasocket functions used all have redbean equivalents</li>
+<li>pgmoon is the only lapis requirement that isn't included, but we don't have cqueues or real LuaSocket and I can't be bothered to write a shim for pgmoon at the moment (though we do have UNIX sockets, so it's theoretically possible)</li>
+</ul>
+</body>
+</html>
