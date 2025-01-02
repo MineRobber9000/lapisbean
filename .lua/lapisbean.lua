@@ -145,7 +145,7 @@ local _req = {
   remote_addr = ip(GetClientAddr);
   request_uri = function() return GetUrl() end;
 
-  read_body_as_string = function() return GetBody end;
+  read_body_as_string = function() return GetBody() end;
   parsed_url = function() return ParseUrl(GetUrl()) end;
 
   params_post = function()
